@@ -18,7 +18,7 @@ function populateDropdowns(){
     var secondSelect = document.getElementById("secondSelect");
     var meridiemSelect = document.getElementById("meridiemSelect");
 
-    for (var i = 0; i < 12; i++) {
+    for (var i = 1; i < 13; i++) {
         var option = document.createElement("option");
         option.text = i.toString().padStart(2, 0);
         hourSelect.add(option);
@@ -31,13 +31,13 @@ function populateDropdowns(){
         secondSelect.add(option.cloneNode(true));
     }
 
-    var option = document.createElement("option");
-    option.text = "am";
-    meridiemSelect.add(option);
+    var optionAM = document.createElement("option");
+    optionAM.text = "am";
+    meridiemSelect.add(optionAM);
 
-    var option1 = document.createElement("option1");
-    option1.text = "pm";
-    meridiemSelect.add(option1);
+    var optionPM = document.createElement("option");
+    optionPM.text = "pm";
+    meridiemSelect.add(optionPM);
   
 }
 function setAlarm () {
